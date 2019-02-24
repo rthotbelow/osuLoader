@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("osu!Loader")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Load osu! with patches using .NET's Reflection!")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Cyuubi")]
 [assembly: AssemblyProduct("osu!Loader")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright © 2019, Cyuubi")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

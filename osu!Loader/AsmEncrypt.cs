@@ -3,10 +3,10 @@
     class AsmEncrypt
     {
         // Class
-        public const string class_OsuMain             = "#=zg1eYzryQU9dCkrUOZA==";         // osu.OsuMain
-        public const string class_Menu                = "#=z8sq7MDDzTzIiOgs59HFV$OyKzSq2"; // osu.GameModes.Menus.Menu
-        public const string class_NotificationManager = "#=z9XIVFUSuRnTbODErHkQNcbA=";     // osu.Graphics.Notifications.NotificationManager
-        public const string class_AuthenticodeTools   = "#=z7PqnVCExmK_6eMpwXHaRXKs=";     // osu_common.Helpers.AuthenticodeTools
+        public const string class_OsuMain             = "#=zg1eYzryQU9dCkrUOZA==";         // osu
+        public const string class_Menu                = "#=z8sq7MDDzTzIiOgs59HFV$OyKzSq2"; // osu.GameModes.Menus
+        public const string class_NotificationManager = "#=z9XIVFUSuRnTbODErHkQNcbA=";     // osu.Graphics.Notifications
+        public const string class_AuthenticodeTools   = "#=z7PqnVCExmK_6eMpwXHaRXKs=";     // osu_common.Helpers
 
         // Method
         public const string method_FullPath          = "#=z3vaSdN8Vt$GH"; // osu.OsuMain
