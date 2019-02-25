@@ -27,6 +27,7 @@ namespace osuLoader
             Type OsuMain             = asm.GetType(AsmEncrypt.class_OsuMain);
             Type Menu                = asm.GetType(AsmEncrypt.class_Menu);
             Type VoidDelegate        = asm.GetType(AsmEncrypt.delegate_VoidDelegate);
+            Type BanchoClient        = asm.GetType(AsmEncrypt.class_BanchoClient);
             Type NotificationManager = asm.GetType(AsmEncrypt.class_NotificationManager);
             Type AuthenticodeTools   = asm.GetType(AsmEncrypt.class_AuthenticodeTools);
 
@@ -40,6 +41,7 @@ namespace osuLoader
             MethodInfo IsTrusted_patched = typeof(MthdPatch).GetMethod("IsTrusted");
 
             MethodInfo ChangeOnlineImage = Menu.GetMethod(AsmEncrypt.method_ChangeOnlineImage, BindingFlags.Static | BindingFlags.NonPublic, null, new[] { typeof(string), typeof(string) }, null);
+            MethodInfo SetServer         = BanchoClient.GetMethod(AsmEncrypt.method_SetServer, BindingFlags.Static | BindingFlags.NonPublic, null, new[] { typeof(string[]) }, null);
             MethodInfo ShowMessage       = NotificationManager.GetMethod(AsmEncrypt.method_ShowMessage, BindingFlags.Static | BindingFlags.NonPublic, null, new[] { typeof(string), Color, typeof(int), VoidDelegate }, null);
 
             Console.WriteLine($"[Unpatched] FullPath(): {FullPath.Invoke(null, null).ToString()}");
@@ -57,6 +59,9 @@ namespace osuLoader
 
                 *p_FullPath = *p_FullPath_patched;
                 *p_Filename = *p_Filename_patched;
+
+                // Set server endpoints
+                SetServer.Invoke(null, new object[] { new string[] { "https://c.ripple.moe" } });
 
                 // Patch out signature checks
                 int* p_verifySigMethod      = (int*)IsTrusted.MethodHandle.Value.ToPointer()      + 2;
