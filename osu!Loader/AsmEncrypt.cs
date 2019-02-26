@@ -3,21 +3,21 @@
     class AsmEncrypt
     {
         // Class
-        public const string class_OsuMain             = "#=zg1eYzryQU9dCkrUOZA==";         // osu
-        public const string class_Menu                = "#=z8sq7MDDzTzIiOgs59HFV$OyKzSq2"; // osu.GameModes.Menus
-        public const string class_BanchoClient        = "#=zY2ymwaufFddy9doqlbWI3ow=";     // osu.Online
-        public const string class_NotificationManager = "#=z9XIVFUSuRnTbODErHkQNcbA=";     // osu.Graphics.Notifications
-        public const string class_AuthenticodeTools   = "#=z7PqnVCExmK_6eMpwXHaRXKs=";     // osu_common.Helpers
+        public const string class_OsuMain             = "#=zEPa3u0loJxXK0Jg8rw==";         // osu
+        public const string class_Menu                = "#=zwTBVhJt637MGlPargfGD8cKRYGyw"; // osu.GameModes.Menus
+        public const string class_BanchoClient        = "#=zwWMgvs$igNjInIQ9S62_MXE=";     // osu.Online
+        public const string class_NotificationManager = "#=zLAPwqaoQkVWCvma00fd6lr8=";     // osu.Graphics.Notifications
+        public const string class_AuthenticodeTools   = "#=zZBz4TcMRySiW8_8zrx2cHnU=";     // osu_common.Helpers
 
         // Method
-        public const string method_FullPath          = "#=z3vaSdN8Vt$GH"; // osu.OsuMain
-        public const string method_Filename          = "#=zpqc5vZ8Q1$Uz"; // osu.OsuMain
-        public const string method_ChangeOnlineImage = "#=zVFsONpCC1maI"; // osu.GameModes.Menus.Menu
-        public const string method_SetServer         = "#=zFGRsKx8=";     // osu.Online.BanchoClient
-        public const string method_ShowMessage       = "#=zMDYeemk=";     // osu.Graphics.Notifications.NotificationManager
-        public const string method_IsTrusted         = "#=zq$S7OeI=";     // osu_common.Helpers.AuthenticodeTools
+        public const string method_FullPath          = "#=zqC0pfstn$c4s"; // osu.OsuMain
+        public const string method_Filename          = "#=z1Y8pSRx21Rk0"; // osu.OsuMain
+        public const string method_ChangeOnlineImage = "#=zFXUSJgZ5wDu8"; // osu.GameModes.Menus.Menu
+        public const string method_SetServer         = "#=zk0ZDyvg=";     // osu.Online.BanchoClient
+        public const string method_ShowMessage       = "#=zBhgDgGM=";     // osu.Graphics.Notifications.NotificationManager
+        public const string method_IsTrusted         = "#=zCXhsJf4=";     // osu_common.Helpers.AuthenticodeTools
 
         // Other
-        public const string delegate_VoidDelegate = "#=zaBjD1rXqd8jjMsoQ3Ex7P2U="; // osu_common.Helpers
+        public const string delegate_VoidDelegate = "#=zR2c50BFdoPuhPbmZzovMpCw="; // osu_common.Helpers
     }
 }
