@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Reflection;
@@ -61,7 +61,7 @@ namespace osuLoader
                 *p_Filename = *p_Filename_patched;
 
                 // Set server endpoints
-                SetServer.Invoke(null, new object[] { new string[] { "https://c.ripple.moe" } });
+                SetServer.Invoke(null, new object[] { new string[] { "https://c.navisu.moe" } });
 
                 // Patch out signature checks
                 int* p_verifySigMethod      = (int*)IsTrusted.MethodHandle.Value.ToPointer()      + 2;
